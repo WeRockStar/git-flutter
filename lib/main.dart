@@ -30,21 +30,6 @@ class AppWidget extends StatelessWidget {
   }
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Git',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const GitUserPage(title: 'Github Users'),
-    );
-  }
-}
-
 class GitUserPage extends StatefulWidget {
   const GitUserPage({super.key, required this.title});
 
