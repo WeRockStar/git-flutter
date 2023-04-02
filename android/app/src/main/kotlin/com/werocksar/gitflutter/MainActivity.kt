@@ -1,4 +1,4 @@
-package com.werocksar.git_flutter
+package com.werocksar.gitflutter
 
 import io.flutter.embedding.android.FlutterActivity
 
