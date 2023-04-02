@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:git/theme/theme.dart';
 
 import 'features/user/user.widget.dart';
 
@@ -23,7 +24,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Git',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: theme,
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,
     ); //added by extension
