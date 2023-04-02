@@ -12,8 +12,7 @@ class AppModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute('/',
-            child: (context, args) => const GitUserPage(title: 'Github Users')),
+        ChildRoute('/', child: (context, args) => const GitUserPage()),
       ];
 }
 

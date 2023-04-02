@@ -12,9 +12,8 @@ import 'package:git/features/user/user.widget.dart';
 void main() {
   testWidgets('Git Users AppBar', (WidgetTester tester) async {
     Widget testWidget = const MediaQuery(
-        data: MediaQueryData(),
-        child: MaterialApp(home: GitUserPage(title: 'Git Users')));
+        data: MediaQueryData(), child: MaterialApp(home: GitUserPage()));
     await tester.pumpWidget(testWidget);
-    expect(find.text('Git Users'), findsOneWidget);
+    expect(find.text('Github Users'), findsOneWidget);
   });
 }
