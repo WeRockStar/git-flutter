@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-import 'main.dart';
+import 'features/user/user.widget.dart';
 
 var modular = ModularApp(module: AppModule(), child: const AppWidget());
 

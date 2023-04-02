@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:git_flutter/main.dart';
+import 'package:git_flutter/features/user/user.widget.dart';
 
 void main() {
   testWidgets('Git Users AppBar', (WidgetTester tester) async {
