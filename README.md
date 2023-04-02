@@ -1,3 +1,1 @@
-# git_flutter
-
-Playground Flutter project
+# Playground Flutter project
