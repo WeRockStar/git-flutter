@@ -10,10 +10,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:git/features/user/user.widget.dart';
 
 void main() {
-  testWidgets('Git Users AppBar', (WidgetTester tester) async {
+  testWidgets('Two Bottom Navigation Items', (WidgetTester tester) async {
     Widget testWidget = const MediaQuery(
         data: MediaQueryData(), child: MaterialApp(home: GitUserPage()));
     await tester.pumpWidget(testWidget);
-    expect(find.text('Github Users'), findsOneWidget);
+
+    expect(find.text('My User'), findsOneWidget);
+    expect(find.text('Trending'), findsOneWidget);
   });
 }
