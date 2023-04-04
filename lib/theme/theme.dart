@@ -6,5 +6,6 @@ ThemeData createTheme(BuildContext context) {
   var textTheme = GoogleFonts.robotoMonoTextTheme(
     Theme.of(context).textTheme,
   );
-  return ThemeData(primarySwatch: primarySwatch, textTheme: textTheme);
+  return ThemeData(
+      primarySwatch: primarySwatch, useMaterial3: true, textTheme: textTheme);
 }
