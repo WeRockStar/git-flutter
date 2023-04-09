@@ -7,12 +7,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:git/features/user/user.widget.dart';
+import 'package:git/features/home/home.dart';
 
 void main() {
   testWidgets('Bottom Navigation Items', (WidgetTester tester) async {
     Widget testWidget = const MediaQuery(
-        data: MediaQueryData(), child: MaterialApp(home: GitUserPage()));
+        data: MediaQueryData(), child: MaterialApp(home: HomePage()));
     await tester.pumpWidget(testWidget);
 
     expect(find.text('Home'), findsOneWidget);

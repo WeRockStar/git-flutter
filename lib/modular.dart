@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:git/theme/theme.dart';
 
-import 'features/user/user.widget.dart';
+import 'features/home/home.dart';
 
 var modular = ModularApp(module: AppModule(), child: const AppWidget());
 
@@ -12,7 +12,7 @@ class AppModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute('/', child: (context, args) => const GitUserPage()),
+        ChildRoute('/', child: (context, args) => const HomePage()),
       ];
 }
 

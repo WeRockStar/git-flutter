@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:git/theme/color.dart';
 
-class GitUserPage extends StatelessWidget {
-  const GitUserPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
