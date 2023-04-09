@@ -26,6 +26,6 @@ class AppWidget extends StatelessWidget {
       theme: createTheme(context),
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,
-    ); //added by extension
+    );
   }
 }
