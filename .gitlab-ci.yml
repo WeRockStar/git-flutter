@@ -7,8 +7,15 @@
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Flutter.gitlab-ci.yml
 stages:
+  - linter
   - test
   - build
+
+linter:
+  stage: linter
+  image: ghcr.io/cirruslabs/flutter:stable
+  script:
+    - flutter analyze
 
 test:
   stage: test
