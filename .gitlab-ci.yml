@@ -23,6 +23,12 @@ test:
   script:
     - flutter test
 
+fastlane-build:
+  image: werockstar/android-build:0.0.1-alpha06
+  stage: build
+  script:
+    - fastlane android build
+
 build-apk:
   stage: build
   image: ghcr.io/cirruslabs/flutter:stable
