@@ -31,3 +31,10 @@ jobs:
         run: flutter pub get
       - name: Run tests
         run: flutter test
+  build:
+   runs-on: ubuntu-latest
+   container:
+     image: werockstar/android-build:0.0.1-alpha06
+   steps:
+     - name: build
+       run: bundler exec fastlane android build
