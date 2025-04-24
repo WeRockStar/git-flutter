@@ -32,6 +32,8 @@ migrate_working_dir/
 .pub/
 /build/
 android/app/.cxx/
+fastlane/report.xml
+fastlane/README.md
 
 # Symbolication related
 app.*.symbols

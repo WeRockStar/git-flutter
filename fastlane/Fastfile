@@ -1,0 +1,34 @@
+default_platform(:android)
+
+platform :android do
+  desc "Build Android APK"
+  lane :build do
+    sh("flutter build apk --release")
+  end
+
+  desc "Run tests"
+  lane :test do
+    sh("flutter test")
+  end
+
+  desc "Build and deploy to Firebase App Distribution"
+  lane :beta do
+    build
+    # Add firebase distribution commands here
+    # firebase_app_distribution(...)
+  end
+end
+
+platform :ios do
+  desc "Build iOS"
+  lane :build do
+    sh("flutter build ios --release --no-codesign")
+  end
+
+  desc "Build and deploy to TestFlight"
+  lane :beta do
+    build
+    # Add TestFlight upload commands here
+    # upload_to_testflight(...)
+  end
+end
